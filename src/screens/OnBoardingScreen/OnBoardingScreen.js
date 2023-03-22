@@ -1,8 +1,8 @@
 import { StyleSheet, Image, Text, View } from "react-native";
 import React from "react";
 import Onboarding from "react-native-onboarding-swiper";
-import { windowHeight, windowWidth } from "../utility/mobilesizes";
-import { NextIcon } from "../design/icons";
+import { windowHeight, windowWidth } from "../../utility/mobilesizes";
+import { NextIcon } from "../../design/icons";
 import { TouchableOpacity } from "react-native";
 
 const OnBoardingScreen1 = () => {
@@ -22,7 +22,7 @@ const OnBoardingScreen1 = () => {
           backgroundColor: "#fff",
           image: (
             <Image
-              source={require("../assets/OnBoarding2.png")}
+              source={require("../../assets/OnBoarding2.png")}
               style={styles.OnboardingImage}
             />
           ),
@@ -34,7 +34,7 @@ const OnBoardingScreen1 = () => {
           backgroundColor: "#fff",
           image: (
             <Image
-              source={require("../assets/OnBoarding1.png")}
+              source={require("../../assets/OnBoarding1.png")}
               style={styles.OnboardingImage}
             />
           ),
@@ -46,7 +46,7 @@ const OnBoardingScreen1 = () => {
           backgroundColor: "#fff",
           image: (
             <Image
-              source={require("../assets/OnBoarding3.png")}
+              source={require("../../assets/OnBoarding3.png")}
               style={styles.OnboardingImage}
             />
           ),

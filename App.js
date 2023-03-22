@@ -1,21 +1,14 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import OnBoardingScreen1 from "./src/screens/OnBoardingScreen";
+import OnBoardingScreen1 from "./src/screens/OnBoardingScreen/OnBoardingScreen";
+import AppFlow from "./src/navigation/AppFlow";
+import { NativeBaseProvider } from "native-base";
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <OnBoardingScreen1 />
-    </NavigationContainer>
+    <NativeBaseProvider>
+      <NavigationContainer>
+        <AppFlow />
+      </NavigationContainer>
+    </NativeBaseProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
